@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    font-family: serif;
+}
+
+nav a {
+    padding: 1.25rem;
+}
+
+.menu-btn::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-btn:hover:after {
+    transform: scale(1.2);
+}
+
+.location-btn::after {
+    content: "retailers";
+}
+
+.search-btn::after {
+    content: "search";
+}
+
+.location-btn::after,
+.search-btn::after {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transition: ease-in-out 0.7s;
+}
+
+.location-btn:hover::after,
+.search-btn:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
