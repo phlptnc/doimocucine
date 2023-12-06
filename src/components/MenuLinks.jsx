@@ -5,7 +5,7 @@ import RoundedBtn from "./Button/RoundedBtn"
 import { RiMapPin2Line } from "react-icons/ri"
 import { BsPerson } from "react-icons/bs"
 import { SlBookOpen } from "react-icons/sl"
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const menuData = [
     {
@@ -121,7 +121,7 @@ function MenuLinks() {
                         icon={<RiMapPin2Line size={20} />}
                         label="Find a retailer"
                         transform="uppercase"
-                        style="flex gap-5 items-center hover:bg-black hover:text-white duration-500"
+                        style="flex gap-5 items-center border-black hover:bg-black hover:text-white duration-500"
                     />
                 </motion.div>
             </motion.div>

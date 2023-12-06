@@ -6,7 +6,7 @@ function RoundedBtn(props) {
         <>
             <Link
                 to={props.to}
-                className={`${props.transform} ${props.style} border-[1px] border-black px-8 py-3 rounded-full ease-in-out duration-300 hover:border-black`}
+                className={`${props.transform} ${props.style} border-[1px] px-8 py-3 rounded-full ease-in-out duration-300 hover:border-black`}
                 target={props.target}
             >
                 {props.icon}
