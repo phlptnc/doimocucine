@@ -112,13 +112,15 @@ function MenuLinks() {
                     className="flex justify-between items-center"
                 >
                     <UnderlineBtn
-                        icon={<BsPerson size={20} />}
+                        icon={<BsPerson size={25} />}
                         label="Reserved Area"
+                        transform="uppercase"
                         style="flex gap-5 items-center"
                     />
                     <RoundedBtn
                         icon={<RiMapPin2Line size={20} />}
                         label="Find a retailer"
+                        transform="uppercase"
                         style="flex gap-5 items-center hover:bg-black hover:text-white duration-500"
                     />
                 </motion.div>
