@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion"
 import Home from "./pages/Home"
 import Manifesto from "./pages/Manifesto"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
     const location = useLocation()
@@ -16,6 +17,7 @@ function App() {
                     <Route path="manifesto" element={<Manifesto />} />
                 </Routes>
             </AnimatePresence>
+            <Footer />
         </>
     )
 }
