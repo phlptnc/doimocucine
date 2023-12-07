@@ -7,7 +7,10 @@ function Scale({ children }) {
 
     return (
         <>
-            <motion.div style={{ scale: scale }} className="w-full h-full ">
+            <motion.div
+                style={{ scale: scale }}
+                className="w-full h-full relative z-40"
+            >
                 {children}
             </motion.div>
         </>

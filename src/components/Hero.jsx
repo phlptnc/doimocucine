@@ -4,7 +4,9 @@ import { motion } from "framer-motion"
 function Hero() {
     return (
         <>
-            <section className="h-[100vh] bg-[#000] w-screen flex items-end justify-center pb-40">
+            <section className="min-h-screen w-full bg-[url(./assets/hero-bg.jpg)] bg-no-repeat bg-center flex flex-col items-center justify-end pb-40 relative">
+                <div className="hero-overlay"></div>
+
                 <motion.h1
                     // initial={{ opacity: 0, scale: 1.5, y: -200 }}
                     // animate={{ opacity: 1, scale: 1, y: 0, zIndex: 0 }}
@@ -12,13 +14,16 @@ function Hero() {
                     // transition={{
                     //     duration: 2,
                     //     ease: "easeInOut",
-                    //     // delay: 1,
+                    //     delay: 1,
                     // }}
-                    className=" relative text-yellow-400"
+                    className=" relative text-white"
                 >
                     Made to feed your soul
                 </motion.h1>
-                <h1></h1>
+                <p className="text-white uppercase max-w-[450px] text-center  z-10">
+                    Doimo Cucine creates more than places in which to feed the
+                    body. It projects and dreams that take form
+                </p>
             </section>
         </>
     )
