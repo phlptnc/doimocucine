@@ -3,13 +3,13 @@ import React from "react"
 function Values() {
     return (
         <>
-            <section className=" min-h-screen bg-slate-400 flex items-center">
+            <section className="flex items-center">
                 <div className="container">
                     <div className=" max-w-6xl m-auto text-center pb-[10rem]">
                         <h2>Freedom. Harmony. Emotion. Culture. Wellbeing.</h2>
                     </div>
                     <div className="flex justify-between">
-                        <div className="left uppercase text-sm">Our soul</div>
+                        <div className="left uppercase text-sm">Values</div>
                         <div className="right w-3/4 text-xl leading-snug flex flex-col gap-6 tracking-wide">
                             <p>
                                 <b>Style</b> We use a linear, direct and

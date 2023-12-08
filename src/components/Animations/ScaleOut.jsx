@@ -1,9 +1,9 @@
 import React from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, transform, useScroll, useTransform } from "framer-motion"
 
-function Scale({ children }) {
+function ScaleOut({ children }) {
     const { scrollYProgress } = useScroll()
-    const scale = useTransform(scrollYProgress, [0, 1], [1.5, 0.8])
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.6])
 
     return (
         <>
@@ -17,4 +17,4 @@ function Scale({ children }) {
     )
 }
 
-export default Scale
+export default ScaleOut

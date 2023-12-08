@@ -11,17 +11,9 @@ import Scale from "./Animations/Scale"
 
 function Video() {
     const ref = useRef(null)
-    // const img = useRef(null)
 
-    const { scrollYProgress } = useScroll({
-        // target: ref,
-        // offset: ["0 1", "1.33 1"],
-        // offset: ["start end", "end start"],
-    })
-
+    const { scrollYProgress } = useScroll({})
     const y = useTransform(scrollYProgress, [0, 1], [0, 1000])
-    const scale = useTransform(scrollYProgress, [0, 1], [1.5, 0.8])
-    // const imageY = useTransform(scrollYProgress, [0, 1], [100, 0])
 
     const inView = useInView(ref, { once: true })
     useEffect(() => {}, [inView])
@@ -32,7 +24,7 @@ function Video() {
                 {/* background image */}
                 <motion.div
                     style={{ y: y }}
-                    className="home bg-[url(./assets/white-bg-1.webp)] bg-no-repeat bg-center h-[120%] w-full absolute left-0 top-[-50%] -z-10"
+                    className="bg-[url(./assets/white-bg-1.webp)] bg-no-repeat bg-center h-[120%] w-full absolute left-0 top-[-50%] -z-10"
                 />
                 <div className="container">
                     <div className="row uppercase mb-10">

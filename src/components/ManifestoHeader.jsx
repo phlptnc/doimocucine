@@ -37,9 +37,9 @@ const fadeUp = {
 function ManifestoHeader() {
     return (
         <>
-            <section className="min-h-screen">
+            <section className="">
                 <div className="container text-center">
-                    <p className="upperclass pt-52 pb-14">Manifesto</p>
+                    <p className="upperclass pb-14">Manifesto</p>
                     <div className="">
                         {manifesto.map((item, index) => (
                             <motion.div key={index} className="overflow-hidden">
