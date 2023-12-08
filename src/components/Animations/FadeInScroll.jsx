@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
 
-function ScaleOut({ children }) {
+function FadeInScroll({ children }) {
     const ref = useRef(null)
     const inView = useInView(ref, { once: true })
 
@@ -18,8 +18,8 @@ function ScaleOut({ children }) {
             <div ref={ref}>
                 <motion.div
                     variants={{
-                        initial: { scale: 0, y: 50 },
-                        animate: { scale: 1, y: 0 },
+                        initial: { opacity: 0, y: 50 },
+                        animate: { opacity: 1, y: 0 },
                     }}
                     initial="initial"
                     animate={controls}
@@ -32,4 +32,4 @@ function ScaleOut({ children }) {
     )
 }
 
-export default ScaleOut
+export default FadeInScroll
