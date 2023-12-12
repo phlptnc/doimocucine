@@ -1,7 +1,7 @@
 import React from "react"
-import { motion, transform, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 
-function ScaleOutProgress({ children }) {
+function ScaleOutProgress({ children, style }) {
     const { scrollYProgress } = useScroll()
     const scale = useTransform(scrollYProgress, [0, 1], [1, 1.6])
 
@@ -9,7 +9,7 @@ function ScaleOutProgress({ children }) {
         <>
             <motion.div
                 style={{ scale: scale }}
-                className="w-full h-full relative z-10"
+                className="h-full w-full relative z-10 overflow-hidden"
             >
                 {children}
             </motion.div>

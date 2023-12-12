@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import { motion, useAnimation, useInView } from "framer-motion"
+import { easeInOut, motion, useAnimation, useInView } from "framer-motion"
 
 function FadeInScroll({ children }) {
     const ref = useRef(null)
@@ -23,7 +23,7 @@ function FadeInScroll({ children }) {
                     }}
                     initial="initial"
                     animate={controls}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1, ease: easeInOut, delay: 0.3 }}
                 >
                     {children}
                 </motion.div>

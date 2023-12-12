@@ -14,7 +14,7 @@ function Hero() {
                     style={{ scale: scale }}
                     className="absolute top-0 left-0 min-h-screen w-full"
                 >
-                    <img src={HeroBg} alt="" />
+                    <img src={HeroBg} alt="" className="w-full h-full" />
                 </motion.div>
                 <div className="hero-overlay"></div>
 

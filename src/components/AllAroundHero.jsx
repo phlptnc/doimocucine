@@ -47,10 +47,10 @@ function AllAroundHero() {
                     </div>
                 </div>
                 <div className="flex gap-10 relative pb-4 z-10">
-                    <a href="">Aspen</a>
-                    <a href="">D12</a>
-                    <a href="">D20</a>
-                    <a href="">D23</a>
+                    <a href="#aspen">Aspen</a>
+                    <a href="#d12">D12</a>
+                    <a href="#d20">D20</a>
+                    <a href="#d23">D23</a>
                 </div>
             </section>
         </>

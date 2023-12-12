@@ -11,14 +11,26 @@ function Navbar() {
         setMenuOpen(!menuOpen)
     }
 
+    const goTop = () => {
+        window.scrollTo({
+            top: 0,
+        })
+    }
+
     return (
         <>
-            <nav className="w-full text-white uppercase flex justify-between items-center py-6 px-20 mix-blend-difference fixed z-30">
+            <nav className="w-full text-white uppercase flex justify-between items-center py-6 px-20 mix-blend-difference fixed z-40">
                 <div className="left flex text-sm font-medium">
-                    <Link to="/">All Around System</Link>
-                    <Link to="/">Manifesto</Link>
+                    <Link to="/all-around-system">All Around System</Link>
+                    <Link onClick={goTop} to="/manifesto">
+                        Manifesto
+                    </Link>
                 </div>
-                <Link to="/" className="absolute left-0 right-0 mx-auto w-fit">
+                <Link
+                    onClick={goTop}
+                    to="/"
+                    className="absolute left-0 right-0 mx-auto w-fit"
+                >
                     <img src={Logo} alt="logo" />
                 </Link>
                 <div className="right flex items-center mr-32">
