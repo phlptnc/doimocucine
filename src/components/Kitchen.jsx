@@ -1,11 +1,24 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
+import { motion, useAnimation, useInView } from "framer-motion"
 import { TfiRulerAlt } from "react-icons/tfi"
 import { Link } from "react-router-dom"
 import FadeInScroll from "./Animations/FadeInScroll"
 import ScaleOut from "./Animations/ScaleOut"
 import ScaleOutProgress from "./Animations/ScaleOutProgress"
+import { textFadeUp } from "./Animations/anim"
 
 function Kitchen(props) {
+    const ref = useRef(null)
+    const inView = useInView(ref, { once: true })
+
+    const controls = useAnimation()
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("animate")
+        }
+    }, [inView])
+
     return (
         <>
             <section
@@ -27,10 +40,19 @@ function Kitchen(props) {
                                 </ScaleOut>
                             </ScaleOutProgress>
                         </div>
+                        <div
+                            ref={ref}
+                            className="overflow-hidden absolute left-0 right-0 top-[-6.5rem] z-20 mx-auto w-fit h-fit"
+                        >
+                            <motion.h1
+                                variants={textFadeUp}
+                                initial="initial"
+                                animate={controls}
+                            >
+                                {props.title}
+                            </motion.h1>
+                        </div>
 
-                        <h1 className="absolute left-0 right-0 top-[-6.5rem] z-20 mx-auto w-fit">
-                            {props.title}
-                        </h1>
                         <div className="absolute left-0 top-0 z-10 w-full h-full">
                             <ScaleOut>
                                 <Link

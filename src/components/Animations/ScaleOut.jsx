@@ -24,7 +24,7 @@ function ScaleOut({ children }) {
                     initial="initial"
                     animate={controls}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    className="w-full h-full relative z-50"
+                    className="w-full h-full relative z-20"
                 >
                     {children}
                 </motion.div>
