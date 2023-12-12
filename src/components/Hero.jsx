@@ -39,6 +39,11 @@ function Hero() {
                     Doimo Cucine creates more than places in which to feed the
                     body. It projects and dreams that take form
                 </motion.p>
+                {/* <div className=" w-[12rem] h-[12rem] rounded-full absolute bottom-[-6rem] left-0 right-0 mx-auto z-30 border-t-2 border-b-[1px] flex justify-center">
+                    <a href="" className="text-white">
+                        Scroll
+                    </a>
+                </div> */}
             </section>
         </>
     )
