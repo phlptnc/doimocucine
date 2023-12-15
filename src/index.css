@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Monschone;
+    src: url("/src/assets/monschone.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,25 +22,35 @@ body {
 
 h1 {
     font-size: 8rem;
-    font-weight: 700;
-    font-family: serif;
+    font-weight: 500;
+    font-family: Monschone, sans-serif, system-ui;
 }
 
 h2 {
     font-size: 5rem;
     line-height: 1;
     font-weight: 500;
+    font-family: Monschone, sans-serif, system-ui;
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 1;
+    font-family: Monschone, sans-serif, system-ui;
 }
 
 h4 {
     font-size: 2rem;
     font-weight: 500;
+    font-family: Monschone, serif, system-ui;
+}
+
+.container {
+    max-width: 95rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 nav a {
@@ -86,4 +101,20 @@ nav a {
 
 .underline-btn:hover span::after {
     transform: translateX(0);
+}
+
+.hero-overlay {
+    background: linear-gradient(
+        180deg,
+        #000,
+        #000 2.5%,
+        hsla(0, 0%, 100%, 0) 50%,
+        rgba(0, 0, 0, 0.790835084) 80%,
+        #000
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
 }
