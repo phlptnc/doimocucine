@@ -1,28 +1,17 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import Hero from "../components/Hero"
-import { motion, AnimatePresence } from "framer-motion"
-import { Link } from "react-router-dom"
+import { motion, useInView, useScroll, useTransform } from "framer-motion"
+import HomeIntro from "../components/HomeIntro"
+import Video from "../components/Video"
+import Slider from "../components/Slider"
 
 function Home() {
     return (
         <>
-            <motion.div
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0, zIndex: 999 }}
-                exit={{ opacity: 1, zIndex: 999 }}
-                transition={{
-                    duration: "3",
-                    ease: "easeInOut",
-                    // times: [0, 0.8, 1],
-                }}
-                className="w-full h-[100vh] absolute bg-black"
-            />
-            {/* <Hero /> */}
-            <section>
-                <div className="relative z-10">
-                    <Link to="/manifesto">Manifesto</Link>
-                </div>
-            </section>
+            <Hero />
+            <HomeIntro />
+            <Video />
+            <Slider />
         </>
     )
 }

@@ -20,6 +20,13 @@ body {
     overflow-x: hidden;
 }
 
+h1 div:nth-child(4),
+h1 div:nth-child(6),
+h1 div:nth-child(11),
+h1 div:nth-child(16) {
+    margin-right: 2rem;
+}
+
 h1 {
     font-size: 8rem;
     font-weight: 500;

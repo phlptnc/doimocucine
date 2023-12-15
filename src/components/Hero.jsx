@@ -7,43 +7,55 @@ function Hero() {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 3])
     const opacity = useTransform(scrollYProgress, [0, 1], [1, -10])
 
+    const textFadeUp = {
+        initial: { opacity: 0, y: "30px" },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, delay: 0.5 },
+        },
+    }
+
+    // const bgAnimation = {
+    //     initial:
+    // }
+
     return (
         <>
-            <section className="min-h-screen w-full flex flex-col items-center justify-end pb-40 relative overflow-hidden">
+            <section className="min-h-screen w-full flex flex-col items-center justify-end pb-40 relative overflow-hidden bg-white">
                 <motion.div
                     style={{ scale: scale }}
+                    initial={{ scale: 1.1 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 1.5, ease: "easeIn" }}
                     className="absolute top-0 left-0 min-h-screen w-full"
                 >
-                    <img src={HeroBg} alt="" className="w-full h-full" />
+                    <img src={HeroBg} alt="" className="w-full min-h-screen" />
                 </motion.div>
                 <div className="hero-overlay"></div>
 
                 <motion.h1
                     style={{ opacity: opacity }}
-                    // initial={{ opacity: 0, scale: 1.5, y: -200 }}
-                    // animate={{ opacity: 1, scale: 1, y: 0, zIndex: 0 }}
-                    // exit={{ scale: 1 }}
-                    // transition={{
-                    //     duration: 2,
-                    //     ease: "easeInOut",
-                    //     delay: 1,
-                    // }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                    }}
+                    layoutId="main-heading-1"
                     className=" relative text-white"
                 >
                     Made to feed your soul
                 </motion.h1>
+
                 <motion.p
                     style={{ opacity: opacity }}
+                    variants={textFadeUp}
+                    initial="initial"
+                    animate="animate"
                     className="text-white uppercase max-w-[450px] text-center  z-10"
                 >
                     Doimo Cucine creates more than places in which to feed the
                     body. It projects and dreams that take form
                 </motion.p>
-                {/* <div className=" w-[12rem] h-[12rem] rounded-full absolute bottom-[-6rem] left-0 right-0 mx-auto z-30 border-t-2 border-b-[1px] flex justify-center">
-                    <a href="" className="text-white">
-                        Scroll
-                    </a>
-                </div> */}
             </section>
         </>
     )
