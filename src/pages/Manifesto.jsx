@@ -87,9 +87,7 @@ function Manifesto() {
                         </ScaleOut>
                     </div>
                 </div>
-                <FadeInScroll>
-                    <Values />
-                </FadeInScroll>
+                <Values />
                 <div>
                     <div className="max-w-[100rem] m-auto flex items-center justify-between">
                         <ScaleOut>

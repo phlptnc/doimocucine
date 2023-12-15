@@ -18,8 +18,8 @@ function FadeInScroll({ children }) {
             <div ref={ref}>
                 <motion.div
                     variants={{
-                        initial: { opacity: 0, y: 50 },
-                        animate: { opacity: 1, y: 0 },
+                        initial: { opacity: 0, y: 50, filter: "blur(5px)" },
+                        animate: { opacity: 1, y: 0, filter: "blur(0)" },
                     }}
                     initial="initial"
                     animate={controls}

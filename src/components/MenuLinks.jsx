@@ -27,15 +27,17 @@ const menuData = [
 ]
 
 const animate = {
-    initial: { opacity: 0, y: "30px" },
+    initial: { opacity: 0, y: "30px", filter: "blur(5px)" },
     animate: (i) => ({
         opacity: 1,
         y: 0,
+        filter: "blur(0)",
         transition: { duration: 0.8, delay: 0.4 * (i + 1.5) },
     }),
     exit: (i) => ({
         opacity: 0,
         y: "30px",
+        filter: "blur(5px)",
         transition: { duration: 0.8, delay: -0.4 * (i - 1.5) },
     }),
 }
@@ -60,13 +62,15 @@ function MenuLinks() {
                 className="w-[50%] min-h-screen bg-white flex flex-col justify-between py-[3rem] px-[5rem] fixed right-0 top-0 z-[49]"
             >
                 <motion.div
-                    initial={{ opacity: 0 }}
+                    initial={{ opacity: 0, filter: "blur(5px)" }}
                     animate={{
                         opacity: 1,
+                        filter: "blur(0)",
                         transition: { duration: 0.8, delay: 2.2 },
                     }}
                     exit={{
                         opacity: 0,
+                        filter: "blur(5px)",
                         transition: { duration: 0.8, delay: 0.8 },
                     }}
                 >
@@ -100,13 +104,16 @@ function MenuLinks() {
                 <motion.div
                     initial={{
                         opacity: 0,
+                        filter: "blur(5px)",
                     }}
                     animate={{
                         opacity: 1,
+                        filter: "blur(0)",
                         transition: { duration: 0.8, delay: 2.2 },
                     }}
                     exit={{
                         opacity: 0,
+                        filter: "blur(5px)",
                         transition: { duration: 0.8, delay: 0.8 },
                     }}
                     className="flex justify-between items-center"

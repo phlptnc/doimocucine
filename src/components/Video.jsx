@@ -27,13 +27,15 @@ function Video() {
                     style={{ y: y }}
                     className="bg-[url(./assets/white-bg-1.webp)] bg-no-repeat bg-center h-[120%] w-full absolute left-0 top-[-50%] -z-10"
                 />
-                <FadeInScroll>
-                    <div className="container">
-                        <div className="row uppercase mb-10">
+                <div className="container">
+                    <div className="row uppercase mb-10">
+                        <FadeInScroll>
                             <p className="text-[0.9rem]">Who we are</p>
-                        </div>
-                        <div className="row flex justify-between">
-                            <div className="left w-[65%] flex flex-col gap-10">
+                        </FadeInScroll>
+                    </div>
+                    <div className="row flex justify-between">
+                        <div className="left w-[65%] flex flex-col gap-10">
+                            <FadeInScroll>
                                 <h3>
                                     <span className="mr-14"></span>
                                     We are ideas that become actions. Matter
@@ -41,12 +43,16 @@ function Video() {
                                     concrete values that bring new meaning to an
                                     interior space.
                                 </h3>
+                            </FadeInScroll>
+                            <FadeInScroll>
                                 <RoundLink
                                     label="DISCOVER DOIMO CUCINE"
                                     style="before:bg-black"
                                 />
-                            </div>
-                            <div className="right w-[25%] uppercase flex flex-col gap-5">
+                            </FadeInScroll>
+                        </div>
+                        <div className="right w-[25%] uppercase flex flex-col gap-5">
+                            <FadeInScroll>
                                 <p>
                                     <b>Passion, Liberty, Authenticity</b> and
                                     Creativity are the key significances of
@@ -58,10 +64,10 @@ function Video() {
                                     Beyond apperance and cliches, delving into
                                     the depth of things and people
                                 </b>
-                            </div>
+                            </FadeInScroll>
                         </div>
                     </div>
-                </FadeInScroll>
+                </div>
                 {/* video section */}
                 <div className="max-h-screen w-[95vw] mx-auto relative">
                     <motion.div

@@ -42,7 +42,7 @@ function Kitchen(props) {
                         </div>
                         <div
                             ref={ref}
-                            className="overflow-hidden absolute left-0 right-0 top-[-6.5rem] z-20 mx-auto w-fit h-fit"
+                            className="overflow-hidden absolute left-0 right-0 top-[-6rem] z-20 mx-auto w-fit h-fit"
                         >
                             <motion.h1
                                 variants={textFadeUp}

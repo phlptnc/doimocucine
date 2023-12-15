@@ -27,15 +27,21 @@ function HomeIntro() {
                 <div className="m-auto uppercase text-center">
                     <FadeInScroll>
                         <p>A 360° degree solution</p>
-                        <h2 className="py-[5rem] normal-case">
-                            All-arounD: one complete
-                            <br />
-                            and versatile system
-                            <br />
-                            for designing the kitchen
-                            <br />
-                            of your dreams.
-                        </h2>
+                    </FadeInScroll>
+                    <div className="py-[5rem] normal-case">
+                        <FadeInScroll>
+                            <h2>
+                                All-arounD: one complete
+                                <br />
+                                and versatile system
+                                <br />
+                                for designing the kitchen
+                                <br />
+                                of your dreams.
+                            </h2>
+                        </FadeInScroll>
+                    </div>
+                    <FadeInScroll>
                         <RoundLink
                             to=""
                             label="Explore our all around system"
