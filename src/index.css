@@ -64,6 +64,25 @@ nav a {
     padding: 1.25rem;
 }
 
+.link::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    scale: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.link:hover::after {
+    scale: 1;
+}
+
 .menu-btn::after {
     content: "";
     width: 30px;
@@ -92,7 +111,7 @@ nav a {
     text-transform: uppercase;
     color: #fff;
     position: absolute;
-    bottom: -1rem;
+    bottom: -1.5rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -102,7 +121,7 @@ nav a {
 
 .location-btn:hover::after,
 .search-btn:hover::after {
-    bottom: 0;
+    bottom: -0.5rem;
     opacity: 1;
 }
 

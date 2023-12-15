@@ -16,10 +16,6 @@ function Hero() {
         },
     }
 
-    // const bgAnimation = {
-    //     initial:
-    // }
-
     return (
         <>
             <section className="min-h-screen w-full flex flex-col items-center justify-end pb-40 relative overflow-hidden bg-white">
@@ -28,7 +24,7 @@ function Hero() {
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.5, ease: "easeIn" }}
-                    className="absolute top-0 left-0 min-h-screen w-full"
+                    className="absolute -top-16 left-0 min-h-screen w-full"
                 >
                     <img src={HeroBg} alt="" className="w-full min-h-screen" />
                 </motion.div>
