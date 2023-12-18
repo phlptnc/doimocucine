@@ -59,7 +59,7 @@ function MenuLinks() {
                         delay: 1,
                     },
                 }}
-                className="w-[50%] min-h-screen bg-white flex flex-col justify-between py-[3rem] px-[5rem] fixed right-0 top-0 z-[49]"
+                className=" w-full min-[1050px]:w-[50%] min-h-screen bg-white flex flex-col justify-between py-[10rem] min-[480px]:py-12 px-6 xl:px-[5rem] fixed right-0 top-0 z-[49]"
             >
                 <motion.div
                     initial={{ opacity: 0, filter: "blur(5px)" }}
@@ -94,7 +94,7 @@ function MenuLinks() {
                         >
                             <Link
                                 to={item.href}
-                                className="flex flex-row items-center gap-2 w-fit text-[3rem] before:ease-in-out before:duration-500 before:w-5 before:h-5 before:rounded-full before:bg-black before:scale-0 hover:before:scale-100"
+                                className="mobile-links flex flex-row items-center gap-2 w-fit before:ease-in-out before:duration-500 before:w-5 before:h-5 before:rounded-full before:bg-black before:scale-0 hover:before:scale-100"
                             >
                                 {item.label}
                             </Link>
@@ -116,19 +116,19 @@ function MenuLinks() {
                         filter: "blur(5px)",
                         transition: { duration: 0.8, delay: 0.8 },
                     }}
-                    className="flex justify-between items-center"
+                    className="flex min-[480px]:flex-row flex-col-reverse justify-between min-[480px]:items-center"
                 >
                     <UnderlineBtn
                         icon={<BsPerson size={25} />}
                         label="Reserved Area"
                         transform="uppercase"
-                        style="flex gap-5 items-center"
+                        style="gap-5 items-center min-[480px]:flex hidden"
                     />
                     <RoundedBtn
                         icon={<RiMapPin2Line size={20} />}
                         label="Find a retailer"
                         transform="uppercase"
-                        style="flex gap-5 items-center border-black hover:bg-black hover:text-white duration-500"
+                        style="flex gap-5 items-center border-black hover:bg-black hover:text-white duration-500 w-fit"
                     />
                 </motion.div>
             </motion.div>

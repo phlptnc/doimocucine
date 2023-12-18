@@ -7,16 +7,16 @@ function Footer() {
     return (
         <>
             <footer className="bg-white min-h-screen">
-                <div className="max-w-[110rem] min-h-screen m-auto px-4 pt-[5rem] pb-[10rem] flex">
-                    <div className="left w-full">
-                        <h3 className="pb-10">
+                <div className="max-w-[110rem] min-h-screen m-auto px-4 pt-20 pb-20 min-[850px]:pb-[10rem] flex flex-col gap-16 min-[850px]:flex-row">
+                    <div className="left w-full  flex min-[850px]:flex-col flex-row">
+                        <h3 className="pb-10 w-2/3 min-[850px]:w-fit">
                             We believe
                             <br />
                             every kitchen
                             <br />
                             has a soul.
                         </h3>
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 min-[850px]:flex-row flex-col">
                             <UnderlineBtn
                                 to="https://www.instagram.com/"
                                 label="Instagram"
@@ -39,10 +39,12 @@ function Footer() {
                             />
                         </div>
                     </div>
-                    <div className="right w-full flex flex-col justify-between">
-                        <div className="flex">
+                    <div className="right w-full flex flex-col justify-between gap-16">
+                        <div className="flex min-[600px]:flex-row flex-col gap-16">
                             <div className="w-full">
-                                <h4 className="pb-8">Address</h4>
+                                <h4 className="pb-4 min-[600px]:pb-8">
+                                    Address
+                                </h4>
                                 <p>
                                     Via Schiavonesca, 78
                                     <br />
@@ -54,7 +56,9 @@ function Footer() {
                                 </p>
                             </div>
                             <div className="w-full">
-                                <h4 className="pb-8">Contacts</h4>
+                                <h4 className="pb-4 min-[600px]:pb-8">
+                                    Contacts
+                                </h4>
                                 <div className="flex flex-col gap-2">
                                     <p className="flex gap-2">
                                         Tel
@@ -69,7 +73,9 @@ function Footer() {
                             </div>
                         </div>
                         <div>
-                            <h4 className="pb-8">Need Support?</h4>
+                            <h4 className="pb-4 min-[600px]:pb-8">
+                                Need Support?
+                            </h4>
                             <div className="uppercase flex flex-wrap gap-4 max-w-[700px]">
                                 <RoundedBtn
                                     label="All-around system"

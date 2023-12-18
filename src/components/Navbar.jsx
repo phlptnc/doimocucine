@@ -46,9 +46,9 @@ function Navbar() {
                 variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
                 animate={hidden ? "hidden" : "visible"}
                 transition={{ duration: 0.35, delay: 0.25, ease: "easeInOut" }}
-                className="w-full text-white uppercase flex justify-between items-center py-6 px-20 mix-blend-difference fixed z-40"
+                className="w-full h-[80px] min-[425px]:h-[108px] text-white uppercase flex justify-between items-center py-6 px-4 xl:px-20 mix-blend-difference fixed z-40"
             >
-                <div className="left flex text-sm font-medium">
+                <div className="left hidden min-[850px]:flex text-sm font-medium">
                     <Link
                         onClick={goTop}
                         to="/all-around-system"
@@ -67,11 +67,11 @@ function Navbar() {
                 <Link
                     onClick={goTop}
                     to="/"
-                    className="absolute left-0 right-0 mx-auto w-fit"
+                    className="absolute left-0 min-[850px]:right-0 min-[850px]:mx-auto w-[50%] min-[850px]:w-fit"
                 >
                     <img src={Logo} alt="logo" />
                 </Link>
-                <div className="right flex items-center mr-32">
+                <div className="right hidden min-[850px]:flex items-center mr-32">
                     <Link to="/" className="location-btn relative ">
                         <RiMapPin2Line size={20} />
                     </Link>
@@ -87,7 +87,7 @@ function Navbar() {
                 variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
                 animate={hidden ? "hidden" : "visible"}
                 transition={{ duration: 0.35, ease: "easeInOut" }}
-                className="menu-btn h-[108px] flex items-center mix-blend-difference text-white mr-16 gap-3 text-2xl fixed right-0 ease-in-out duration-200 pr-4 pl-4 z-50 cursor-pointer"
+                className="menu-btn h-[80px] min-[425px]:h-[108px] flex items-center mix-blend-difference text-white xl:mr-16 gap-3 text-2xl fixed right-0 ease-in-out duration-200 pr-4 pl-4 z-50 cursor-pointer"
             >
                 <span className="overflow-hidden h-7">
                     <p

@@ -85,7 +85,7 @@ function Loader({ setLoading }) {
                     initial="initial"
                     animate="animate"
                     layoutId="main-heading-1"
-                    className="flex text-white"
+                    className="flex text-white justify-center w-[18rem] min-[600px]:w-fit flex-wrap"
                 >
                     {title.map((item, index) => (
                         <motion.div

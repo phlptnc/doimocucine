@@ -24,9 +24,13 @@ function Hero() {
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.5, ease: "easeIn" }}
-                    className="absolute -top-16 left-0 min-h-screen w-full"
+                    className="absolute top-0 left-0 min-h-screen w-full"
                 >
-                    <img src={HeroBg} alt="" className="w-full min-h-screen" />
+                    <img
+                        src={HeroBg}
+                        alt=""
+                        className="w-full min-h-screen object-cover"
+                    />
                 </motion.div>
                 <div className="hero-overlay"></div>
 
@@ -37,7 +41,7 @@ function Hero() {
                         ease: "easeInOut",
                     }}
                     layoutId="main-heading-1"
-                    className=" relative text-white"
+                    className=" relative text-white text-center w-[16.5rem] min-[600px]:w-fit"
                 >
                     Made to feed your soul
                 </motion.h1>
@@ -47,7 +51,7 @@ function Hero() {
                     variants={textFadeUp}
                     initial="initial"
                     animate="animate"
-                    className="text-white uppercase max-w-[450px] text-center  z-10"
+                    className="text-white uppercase max-w-[450px] text-center z-10 hidden min-[425px]:block"
                 >
                     Doimo Cucine creates more than places in which to feed the
                     body. It projects and dreams that take form
