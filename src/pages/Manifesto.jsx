@@ -18,7 +18,7 @@ function Manifesto() {
     const ref = useRef(null)
 
     const { scrollYProgress } = useScroll({})
-    const y = useTransform(scrollYProgress, [0, 1], [0, 4000])
+    const y = useTransform(scrollYProgress, [0, 1], [0, 1000])
 
     return (
         <>
@@ -37,34 +37,31 @@ function Manifesto() {
             {/* </AnimatePresence> */}
             <div
                 ref={ref}
-                className="manifesto relative overflow-hidden flex flex-col gap-[13rem] py-[13rem]"
+                className="manifesto relative overflow-hidden flex flex-col gap-20 sm:gap-[13rem] py-[10rem] sm:py-[13rem]"
             >
                 {/* background */}
                 <motion.div
                     style={{ y: y }}
-                    className="bg-[url(./assets/white-bg-1.webp)] bg-no-repeat bg-contain absolute top-0 left-0 w-full h-[100%] -z-10"
+                    className="bg-[url(./assets/white-bg-1.webp)] h-[120%] w-full bg-contain absolute left-0 top-0 -z-10"
                 />
                 <ManifestoHeader />
-                <ScaleOut>
-                    <div>
-                        <div className="container m-auto overflow-hidden">
-                            <ScaleOutProgress>
-                                <img
-                                    src={Image1}
-                                    alt="boutiques"
-                                    className=" w-full h-full"
-                                />
-                            </ScaleOutProgress>
-                        </div>
-                    </div>
-                </ScaleOut>
-                <FadeInScroll>
-                    <Soul />
-                </FadeInScroll>
+
+                <div className="container m-auto overflow-hidden">
+                    <ScaleOut>
+                        <ScaleOutProgress>
+                            <img
+                                src={Image1}
+                                alt="boutiques"
+                                className=" w-full h-full"
+                            />
+                        </ScaleOutProgress>
+                    </ScaleOut>
+                </div>
+                <Soul />
                 <div>
-                    <div className="max-w-[100rem] m-auto flex items-center justify-between">
+                    <div className="max-w-[100rem] m-auto flex min-[990px]:flex-row flex-col items-center justify-between gap-20">
                         <ScaleOut>
-                            <div className="pr-[20rem] overflow-hidden">
+                            <div className="min-[990px]:pr-[20rem] m-auto w-[80%] min-[990px]:w-full overflow-hidden">
                                 <ScaleOutProgress>
                                     <img
                                         src={Image2}
@@ -75,7 +72,7 @@ function Manifesto() {
                             </div>
                         </ScaleOut>
                         <ScaleOut>
-                            <div className="overflow-hidden">
+                            <div className="m-auto w-[80%] min-[990px]:w-full overflow-hidden">
                                 <ScaleOutProgress>
                                     <img
                                         src={Image3}
@@ -88,31 +85,30 @@ function Manifesto() {
                     </div>
                 </div>
                 <Values />
-                <div>
-                    <div className="max-w-[100rem] m-auto flex items-center justify-between">
-                        <ScaleOut>
-                            <div className="overflow-hidden">
-                                <ScaleOutProgress>
-                                    <img
-                                        src={Image4}
-                                        alt=""
-                                        className="w-full h-full object-contain object-center"
-                                    />
-                                </ScaleOutProgress>
-                            </div>
-                        </ScaleOut>
-                        <ScaleOut>
-                            <div className="pl-[20rem] overflow-hidden">
-                                <ScaleOutProgress>
-                                    <img
-                                        src={Image5}
-                                        alt=""
-                                        className="w-full h-full object-contain object-center"
-                                    />
-                                </ScaleOutProgress>
-                            </div>
-                        </ScaleOut>
-                    </div>
+
+                <div className="max-w-[100rem] m-auto flex min-[990px]:flex-row flex-col items-center justify-between gap-20">
+                    <ScaleOut>
+                        <div className="m-auto w-[80%] min-[990px]:w-full overflow-hidden">
+                            <ScaleOutProgress>
+                                <img
+                                    src={Image4}
+                                    alt=""
+                                    className="w-full h-full object-contain object-center"
+                                />
+                            </ScaleOutProgress>
+                        </div>
+                    </ScaleOut>
+                    <ScaleOut>
+                        <div className="min-[990px]:pl-[20rem] m-auto w-[80%] min-[990px]:w-full overflow-hidden">
+                            <ScaleOutProgress>
+                                <img
+                                    src={Image5}
+                                    alt=""
+                                    className="w-full h-full object-contain object-center"
+                                />
+                            </ScaleOutProgress>
+                        </div>
+                    </ScaleOut>
                 </div>
                 <FadeInScroll>
                     <section>

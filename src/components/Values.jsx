@@ -6,18 +6,18 @@ function Values() {
         <>
             <section className="flex items-center">
                 <div className="container">
-                    <div className=" max-w-6xl m-auto text-center pb-[10rem]">
-                        <FadeInScroll>
+                    <FadeInScroll>
+                        <div className=" max-w-6xl m-auto text-center pb-20 sm:pb-[10rem]">
                             <h2>
                                 Freedom. Harmony. Emotion. Culture. Wellbeing.
                             </h2>
-                        </FadeInScroll>
-                    </div>
-                    <div className="flex justify-between">
+                        </div>
+                    </FadeInScroll>
+                    <div className="flex justify-between sm:flex-row flex-col gap-5">
                         <div className="left uppercase text-sm">
                             <FadeInScroll>Values</FadeInScroll>
                         </div>
-                        <div className="right w-3/4 text-xl leading-snug  tracking-wide">
+                        <div className="right sm:w-3/4 w-full sm:text-xl leading-snug  tracking-wide">
                             <FadeInScroll>
                                 <div className="flex flex-col gap-6">
                                     <p>

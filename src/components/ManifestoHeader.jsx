@@ -29,10 +29,10 @@ const manifesto = [
 function ManifestoHeader() {
     return (
         <>
-            <section className="">
+            <section>
                 <div className="container text-center">
-                    <p className="upperclass pb-14">Manifesto</p>
-                    <div className="">
+                    <p className="uppercase pb-14">Manifesto</p>
+                    <div>
                         {manifesto.map((item, index) => (
                             <motion.div key={index} className="overflow-hidden">
                                 <motion.h2
