@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import UnderlineBtn from "./Button/UnderlineBtn"
-import { Link } from "react-router-dom"
 import RoundedBtn from "./Button/RoundedBtn"
 import { RiMapPin2Line } from "react-icons/ri"
 import { BsPerson } from "react-icons/bs"
@@ -9,22 +8,6 @@ import { AnimatePresence, motion } from "framer-motion"
 import Doimocucine from "./MenuLinks/Doimocucine"
 import KitchenMenu from "./MenuLinks/KitchenMenu"
 import IdeasMenu from "./MenuLinks/IdeasMenu"
-
-const animate = {
-    initial: { opacity: 0, y: "30px", filter: "blur(5px)" },
-    animate: (i) => ({
-        opacity: 1,
-        y: 0,
-        filter: "blur(0)",
-        transition: { duration: 0.8, delay: 0.4 * (i + 1.5) },
-    }),
-    exit: (i) => ({
-        opacity: 0,
-        y: "30px",
-        filter: "blur(5px)",
-        transition: { duration: 0.8, delay: -0.4 * (i - 1.5) },
-    }),
-}
 
 function MenuLinks() {
     const [openDoimo, setOpenDoimo] = useState(false)
@@ -91,7 +74,6 @@ function MenuLinks() {
                             filter: "blur(0)",
                             transition: { duration: 0.8, delay: 0.5 },
                         }}
-                        // transition={{ duration: 0.8, delay: 0.5 }}
                         exit={{
                             opacity: 0,
                             y: "30px",
@@ -111,7 +93,6 @@ function MenuLinks() {
                             filter: "blur(0)",
                             transition: { duration: 0.8, delay: 0.7 },
                         }}
-                        // transition={{ duration: 0.8, delay: 0.7 }}
                         exit={{
                             opacity: 0,
                             y: "30px",
@@ -131,7 +112,6 @@ function MenuLinks() {
                             filter: "blur(0)",
                             transition: { duration: 0.8, delay: 0.9 },
                         }}
-                        // transition={{ duration: 0.8, delay: 0.9 }}
                         exit={{
                             opacity: 0,
                             y: "30px",
@@ -150,7 +130,6 @@ function MenuLinks() {
                             filter: "blur(0)",
                             transition: { duration: 0.8, delay: 1.1 },
                         }}
-                        // transition={{ duration: 0.8, delay: 1.1 }}
                         exit={{
                             opacity: 0,
                             y: "30px",
