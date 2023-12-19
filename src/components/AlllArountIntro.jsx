@@ -9,25 +9,25 @@ function AlllArountIntro() {
     return (
         <>
             <section className="min-h-[50vh] w-full flex flex-col justify-center">
-                <div className="container">
+                <div className="container py-[5rem]">
                     <div className="row uppercase mb-10">
                         <FadeInScroll>
                             <p className="text-[0.9rem]">Who we are</p>
                         </FadeInScroll>
                     </div>
-                    <div className="row flex justify-between">
-                        <div className="left w-[65%] flex flex-col gap-10">
+                    <div className="row flex justify-between flex-col lg:flex-row gap-10">
+                        <div className="left w-full lg:w-[65%] flex flex-col gap-10">
                             <FadeInScroll>
                                 <h3>
-                                    <span className="mr-14"></span>Any modular
-                                    contemporary, design or classic kitchen you
-                                    desire is now possible thanks to the
-                                    transversality and adaptability of each
+                                    <span className="lg:mr-14"></span>Any
+                                    modular contemporary, design or classic
+                                    kitchen you desire is now possible thanks to
+                                    the transversality and adaptability of each
                                     single element of All-arounD.
                                 </h3>
                             </FadeInScroll>
                         </div>
-                        <div className="right w-[25%] uppercase flex flex-col gap-5">
+                        <div className="right w-full lg:w-[25%] uppercase flex flex-col gap-5">
                             <FadeInScroll>
                                 <p>
                                     the all-around system begins with the “a” of
@@ -45,7 +45,7 @@ function AlllArountIntro() {
                     </div>
                 </div>
             </section>
-            <section className="min-h-screen w-full flex items-center">
+            <section className="min-h-screen w-full items-center min-[870px]:block hidden overflow-hidden">
                 <div className="container">
                     <div className="w-full h-full relative">
                         <div className=" w-fit h-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
