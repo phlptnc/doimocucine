@@ -91,6 +91,27 @@ nav a {
     font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
+.round-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+}
+
+.round-links::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    scale: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.round-links:hover::before {
+    scale: 1;
+}
+
 .menu-btn::after {
     content: "";
     width: 30px;
