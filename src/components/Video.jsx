@@ -92,9 +92,13 @@ function Video() {
                             opacity: 0,
                         }}
                         transition={{ duration: 3, delay: 1 }}
-                        className="absolute xl:w-full w-[20%]"
+                        className="absolute"
                     >
-                        <img src={Image2} alt="white table" />
+                        <img
+                            src={Image2}
+                            alt="white table"
+                            className="xl:w-full sm:w-[50%] w-[30%] h-full object-contain ml-auto"
+                        />
                     </motion.div>
                     <motion.div
                         initial={{ bottom: 0, left: 0, opacity: 1 }}
@@ -118,9 +122,13 @@ function Video() {
                             opacity: 0,
                         }}
                         transition={{ duration: 3, delay: 0.9 }}
-                        className="absolute xl:w-full w-[20%]"
+                        className="absolute"
                     >
-                        <img src={Image4} alt="table with vase on top" />
+                        <img
+                            src={Image4}
+                            alt="table with vase on top"
+                            className="xl:w-full sm:w-[50%] w-[30%] h-full object-contain ml-auto"
+                        />
                     </motion.div>
                     <motion.div
                         ref={ref}
