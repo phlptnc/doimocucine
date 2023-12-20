@@ -72,7 +72,7 @@ function Kitchen(props) {
                     <div className="right w-full min-[1000px]:w-[40%]">
                         <FadeInScroll>
                             <b>{props.number}</b>
-                            <p className="uppercase min-[1000px]:mt-[6rem] min-[1000px]:mb-[2.5rem] my-8">
+                            <p className="uppercase min-[1000px]:mt-[6rem] min-[1000px]:mb-[2.5rem] my-8 ">
                                 {props.description}
                             </p>
                             <div className="flex items-center gap-4">

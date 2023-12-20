@@ -19,7 +19,7 @@ function IdeasMenu({ onClose }) {
                         ease: [0.5, 0, 0.75, 0],
                     },
                 }}
-                className="bg-[#dadada] w-[120%] h-[900px] pl-4 min-[425px]:pl-[5rem] pt-[3rem] absolute min-[850px]:top-[-10rem] top-0 left-0 z-50"
+                className="bg-[#dadada] w-[120%] h-[900px] pl-4 min-[500px]:pl-[5rem] pt-[3rem] absolute min-[850px]:top-[-10rem] top-0 left-0 z-50"
             >
                 <div
                     onClick={onClose}
@@ -32,31 +32,19 @@ function IdeasMenu({ onClose }) {
                     <p className="uppercase text-sm">Ideas and inspirations</p>
                     <div className="flex flex-col gap-10">
                         <div className="flex flex-col text-[1.5rem] gap-4">
-                            <Link to="" className="round-links">
-                                Our Projects
-                            </Link>
-                            <Link to="" className="round-links">
-                                Moodboards
-                            </Link>
+                            <Link className="round-links">Our Projects</Link>
+                            <Link className="round-links">Moodboards</Link>
                         </div>
                         <div className="flex flex-col text-[1.5rem] gap-4">
-                            <Link to="" className="round-links">
+                            <Link className="round-links">
                                 Suggestions and guides
                             </Link>
-                            <Link to="" className="round-links">
-                                Faq
-                            </Link>
+                            <Link className="round-links">Faq</Link>
                         </div>
                         <div className="flex flex-col text-[1.5rem] gap-4">
-                            <Link to="" className="round-links">
-                                News & press
-                            </Link>
-                            <Link to="" className="round-links">
-                                Download
-                            </Link>
-                            <Link to="" className="round-links">
-                                Video
-                            </Link>
+                            <Link className="round-links">News & press</Link>
+                            <Link className="round-links">Download</Link>
+                            <Link className="round-links">Video</Link>
                         </div>
                     </div>
                 </div>

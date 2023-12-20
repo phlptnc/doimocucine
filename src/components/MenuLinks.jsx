@@ -9,7 +9,7 @@ import Doimocucine from "./MenuLinks/Doimocucine"
 import KitchenMenu from "./MenuLinks/KitchenMenu"
 import IdeasMenu from "./MenuLinks/IdeasMenu"
 
-function MenuLinks() {
+function MenuLinks({ onLinkClick }) {
     const [openDoimo, setOpenDoimo] = useState(false)
     const toggleDoimo = () => {
         setOpenDoimo(!openDoimo)
@@ -23,6 +23,14 @@ function MenuLinks() {
     const [openItem, setOpenItem] = useState(false)
     const toggleItem = () => {
         setOpenItem(!openItem)
+    }
+
+    // Close the KitchenMenu and MenuLinks when a link is clicked
+    const handleLinkClick = () => {
+        setOpenDoimo(false)
+        setOpenKitchen(false)
+        setOpenItem(false)
+        onLinkClick()
     }
 
     return (
@@ -141,8 +149,18 @@ function MenuLinks() {
                         Contacts
                     </motion.a>
                     <AnimatePresence>
-                        {openDoimo && <Doimocucine onClose={toggleDoimo} />}
-                        {openKitchen && <KitchenMenu onClose={toggleKitchen} />}
+                        {openDoimo && (
+                            <Doimocucine
+                                onClose={toggleDoimo}
+                                onLinkClick={handleLinkClick}
+                            />
+                        )}
+                        {openKitchen && (
+                            <KitchenMenu
+                                onClose={toggleKitchen}
+                                onLinkClick={handleLinkClick}
+                            />
+                        )}
                         {openItem && <IdeasMenu onClose={toggleItem} />}
                     </AnimatePresence>
                 </div>

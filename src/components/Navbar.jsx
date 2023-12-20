@@ -16,6 +16,11 @@ function Navbar() {
         setMenuOpen(!menuOpen)
     }
 
+    // Close the KitchenMenu and MenuLinks when a link is clicked
+    const handleLinkClick = () => {
+        setMenuOpen(false)
+    }
+
     //no scroll when menu is open
     menuOpen
         ? (document.body.style.overflow = "hidden")
@@ -102,7 +107,7 @@ function Navbar() {
                 </span>
             </motion.a>
             <AnimatePresence mode="wait">
-                {menuOpen && <MenuLinks />}
+                {menuOpen && <MenuLinks onLinkClick={handleLinkClick} />}
             </AnimatePresence>
         </>
     )

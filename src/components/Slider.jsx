@@ -1,38 +1,38 @@
 import React from "react"
 import Banner from "./Banner"
 
-const slidesData = [
-    {
-        src: "src/assets/home/slides-1.webp",
-        description: "Exceptionally classy spaces",
-        href: "",
-    },
-    {
-        src: "src/assets/home/slides-2.webp",
-        description: "A kitchen that warms the heart",
-        href: "",
-    },
-    {
-        src: "src/assets/home/slides-3.webp",
-        description: "Exceptionally classy spaces",
-        href: "",
-    },
-    {
-        src: "src/assets/home/slides-4.webp",
-        description: "A kitchen that warms the heart",
-        href: "",
-    },
-    {
-        src: "src/assets/home/slides-5.webp",
-        description: "Exceptionally classy spaces",
-        href: "",
-    },
-    {
-        src: "src/assets/home/slides-6.webp",
-        description: "A kitchen that warms the heart",
-        href: "",
-    },
-]
+// const slidesData = [
+//     {
+//         src: "src/assets/home/slides-1.webp",
+//         description: "Exceptionally classy spaces",
+//         href: "",
+//     },
+//     {
+//         src: "src/assets/home/slides-2.webp",
+//         description: "A kitchen that warms the heart",
+//         href: "",
+//     },
+//     {
+//         src: "src/assets/home/slides-3.webp",
+//         description: "Exceptionally classy spaces",
+//         href: "",
+//     },
+//     {
+//         src: "src/assets/home/slides-4.webp",
+//         description: "A kitchen that warms the heart",
+//         href: "",
+//     },
+//     {
+//         src: "src/assets/home/slides-5.webp",
+//         description: "Exceptionally classy spaces",
+//         href: "",
+//     },
+//     {
+//         src: "src/assets/home/slides-6.webp",
+//         description: "A kitchen that warms the heart",
+//         href: "",
+//     },
+// ]
 
 function Slider() {
     return (

@@ -3,7 +3,18 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import { GoArrowLeft } from "react-icons/go"
 
-function Doimocucine({ onClose }) {
+function Doimocucine({ onClose, onLinkClick }) {
+    const handleLinkClick = () => {
+        onClose()
+        onLinkClick()
+
+        goTop = () => {
+            window.scrollTo({
+                top: 0,
+            })
+        }
+    }
+
     return (
         <>
             <motion.div
@@ -19,7 +30,7 @@ function Doimocucine({ onClose }) {
                         ease: [0.5, 0, 0.75, 0],
                     },
                 }}
-                className="bg-[#dadada] w-[120%] h-[900px] pl-4 min-[425px]:pl-[5rem] pt-[3rem] absolute min-[850px]:top-[-10rem] top-0 left-0 z-50"
+                className="bg-[#dadada] w-[120%] h-[900px] pl-4 min-[500px]:pl-[5rem] pt-[3rem] absolute min-[850px]:top-[-10rem] top-0 left-0 z-50"
             >
                 <div
                     onClick={onClose}
@@ -31,18 +42,16 @@ function Doimocucine({ onClose }) {
                 <div className="flex flex-col gap-[3.5rem]">
                     <p className="uppercase text-sm">Doimo Cucine World</p>
                     <div className="flex flex-col text-[1.5rem] gap-4">
-                        <Link to="" className="round-links">
-                            Our Soul
-                        </Link>
-                        <Link to="/manifesto" className="round-links">
+                        <Link className="round-links">Our Soul</Link>
+                        <Link
+                            onClick={handleLinkClick}
+                            to="/manifesto"
+                            className="round-links"
+                        >
                             Manifesto
                         </Link>
-                        <Link to="" className="round-links">
-                            Sustainability
-                        </Link>
-                        <Link to="" className="round-links">
-                            Production process
-                        </Link>
+                        <Link className="round-links">Sustainability</Link>
+                        <Link className="round-links">Production process</Link>
                     </div>
                 </div>
             </motion.div>
