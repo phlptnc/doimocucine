@@ -79,9 +79,13 @@ function Video() {
                             opacity: 0,
                         }}
                         transition={{ duration: 3, delay: 1 }}
-                        className="absolute xl:w-full w-[20%] "
+                        className="absolute"
                     >
-                        <img src={Image1} alt="chandelier" />
+                        <img
+                            src={Image1}
+                            alt="chandelier"
+                            className="xl:w-full sm:w-[50%] w-[30%] h-full object-contain"
+                        />
                     </motion.div>
                     <motion.div
                         initial={{ top: 0, right: 0, opacity: 1 }}
@@ -109,9 +113,13 @@ function Video() {
                             opacity: 0,
                         }}
                         transition={{ duration: 3, delay: 0.9 }}
-                        className="absolute xl:w-full w-[15%]"
+                        className="absolute"
                     >
-                        <img src={Image3} alt="workers" />
+                        <img
+                            src={Image3}
+                            alt="workers"
+                            className="xl:w-full sm:w-[50%] w-[30%] h-full object-contain"
+                        />
                     </motion.div>
                     <motion.div
                         initial={{ bottom: 0, right: 0, opacity: 1 }}
@@ -127,7 +135,7 @@ function Video() {
                         <img
                             src={Image4}
                             alt="table with vase on top"
-                            className="xl:w-full sm:w-[50%] w-[30%] h-full object-contain ml-auto"
+                            className="xl:w-full sm:w-[60%] w-[30%] h-full object-contain ml-auto"
                         />
                     </motion.div>
                     <motion.div
