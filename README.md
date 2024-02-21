@@ -6,7 +6,7 @@
 
 <p>This website showcases a collection of modern kitchen designs. Explore a variety of contemporary kitchen styles, featuring innovative layouts, sleek aesthetics, and cutting-edge functionalities.</p>
 
-Live Demo: <a href='https://doimocucine.vercel.app/'>GymEdge</a>
+Live Demo: <a href='https://doimocucine.vercel.app/'>Doimo Cucine</a>
 
 <h3>Build with:</h3>
 
