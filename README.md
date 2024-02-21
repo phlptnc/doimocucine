@@ -1,5 +1,5 @@
 <div align='center'>
-    <img src='/public/assets/logo.png'>
+    <img src='/public/assets/doimocucine.svg'>
 </div>
 
 <h2>About the project</h2>
